@@ -11,6 +11,10 @@ app.get('/hello/:name', (req, res) => {
     res.send(`Hello, ${req.params.name}!`)
 })
 
+app.get('/goodbye/:name', (req, res) => {
+    res.send(`Goodbye ${req.params.name}!`)
+})
+
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
 
 module.exports = app;
